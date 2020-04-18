@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="facebook">
+
+<listeners>
+<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+<listener class-name="MySuvidha.in.Listeners.CustomListeners"/> 
+
+</listeners>
+ 
+ <test  name="LoginTest">
+    <classes>
+      <class name="MySuvidha.in.TestCases.LoginTest"/>
+     </classes>
+  </test> <!-- Test -->
+  
+   <test  name="SignUpFB">
+    <classes>
+      <class name="MySuvidha.in.TestCases.SignUpTest"/>
+     </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
