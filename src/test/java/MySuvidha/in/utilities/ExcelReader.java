@@ -64,29 +64,6 @@ public class ExcelReader {
 	}
 	
 
-	public Object getCellData(String sheetName,int rowNum,String col)
-	{
-		sheet= workbook.getSheet(sheetName);
-		row= sheet.getRow(rowNum);
-		int cols= row.getLastCellNum();
-		int colNum=-1;
-		
-		for(int i=1;i<cols;i++)
-		{
-			
-			if(row.getCell(i).getStringCellValue().equalsIgnoreCase("col"))
-			{
-				colNum=i;
-			}
-			
-		}
-		
-		
-		
-		cell=row.getCell(colNum);
-		return cell.getStringCellValue();
-		
-	}
 	
 	
 	
